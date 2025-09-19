@@ -13,7 +13,7 @@ class DunderExamples:
         """
         This is the object constructor (not __init__)
 
-        Good Use Case: Singleton
+        Good Use Case: Singleton, immutable objects
 
         Args:
             cls: class
@@ -31,6 +31,12 @@ class DunderExamples:
         """
         print("Inside __init__")
         self.value = value
+
+    def __del__(cls, *args, **kwargs):
+        """
+        Destructor to remove object (runs before garbage collection)
+        """
+        print("Inside __del__")
 
 
 # Execution

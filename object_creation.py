@@ -1,5 +1,5 @@
 """
-This file looks at 3 basic dunders for object creation.
+This file looks at basic dunders for object creation.
 - __new__
 - __init__
 - __del__
